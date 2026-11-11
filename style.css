@@ -1,0 +1,106 @@
+body {
+    background-color: #fff1ba; /*lightgoldenrodyelloy*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.butt2 {
+    display: flex;
+    align-items: center;
+}
+
+.botoes {
+    background-color:lightgreen;
+    width: 90%;
+    margin:   auto;
+    margin-top: 10px;
+    display: flex; /*display flex e etxt align é para consertar os botõies tortos na parte de cima*/
+    align-items: center; /*os botões ficam tortos pois tem 2 linhas de texto*/
+    border-radius: 1px;
+    
+    border: 4px;
+    border-style: groove;
+    border-color:black;
+
+}
+
+button {
+    background-color: green;
+    font-size: 16px;
+    margin-right: 30px;
+    width:125px;
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+    transition: 0.5s all;
+    cursor: pointer;
+
+
+}
+
+button :hover{
+    background-color:darkolivegreen;
+    transform: scale(1.1);
+}
+
+a :hover{
+    background-color:darkolivegreen;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.txteimg {
+    background-color:lightgreen;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 1px;
+    
+
+    border: 4px;
+    border-style: groove;
+    border-color:black;
+}
+
+.global {
+    background-color:darkgreen; /*verde musgo 457a00*/
+    
+    border: 4px;
+    border-style: groove;
+    border-color:black;
+}
+
+.rickroll :not(:hover){
+    
+}
+
+.rodape{
+    color: white;
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 1px;
+    
+
+    border: 4px;
+    border-style: groove;
+    border-color:black;
+}
