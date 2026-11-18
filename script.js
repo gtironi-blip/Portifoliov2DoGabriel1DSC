@@ -76,8 +76,13 @@ function site() {
    switch(nome){
 
     case "flavio":
-        mostrar.innerHTML = `<img src="flavio.jpeg" alt="foto do flavio hipotético" height="300" widith="200">`;
+       
         mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo, Vamos dominar o Brasil!?</p> <img src="flavio.jpeg" alt="foto do flavio hipotético" height="300" widith="200">`;
+        break;
+        
+    case "lula":
+
+        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo, PROTOCOLO NÚMERO 3000 ATIVADO, BOLSA FAMILIA PARA TODOS!</p> <img src="lulatron.webp" alt="foto do lulatron 3000" height="300" widith="200">`
         break;
         
    }
@@ -108,3 +113,16 @@ function aleatorio() {
 }
 
 
+function easteregg() { //nesse eu não usei IA, apenas o que aprendemos
+    let listaSimNao
+    listaSimNao = document.getElementById('mostrarlista')
+    listaSimNao = prompt("Você quer mesmo ver a lista? sim/não")
+
+    if(listaSimNao == "sim"){
+        
+        mostrarlista.innerHTML = `<p>aqui está a lista:<br> na atividade "interação", se você colocar os nomes "flavio" e "lula" algo acontece<br> na atividade "aleatório, se você rolar 67, um gif especifico aparece",</p>`
+    }else{
+    
+        mostrarlista.innerHTML = `Tudo bem :)`
+    }
+}
