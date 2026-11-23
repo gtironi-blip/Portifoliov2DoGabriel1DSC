@@ -84,7 +84,11 @@ function site() {
 
         mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo, PROTOCOLO NÚMERO 3000 ATIVADO, BOLSA FAMILIA PARA TODOS!</p> <img src="lulatron.webp" alt="foto do lulatron 3000" height="300" widith="200">`
         break;
+    
+    case "Knight":
+        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark></p> <a href="../segredo/secret.html"><button >???</button></a>`
         
+        break
    }
 
 }
@@ -115,14 +119,44 @@ function aleatorio() {
 
 function easteregg() { //nesse eu não usei IA, apenas o que aprendemos
     let listaSimNao
-    listaSimNao = document.getElementById('mostrarlista')
+    listaSimNao = document.getElementById('Mostrarlista')
     listaSimNao = prompt("Você quer mesmo ver a lista? sim/não")
 
     if(listaSimNao == "sim"){
         
-        mostrarlista.innerHTML = `<p>aqui está a lista:<br> na atividade "interação", se você colocar os nomes "flavio" e "lula" algo acontece<br> na atividade "aleatório, se você rolar 67, um gif especifico aparece",</p>`
+        Mostrarlista.innerHTML = `<p>aqui está a lista:<br> na atividade "interação", se você colocar os nomes "flavio", "lula" e "Knight", algo acontece<br> na atividade "aleatório, se você rolar 67, um gif especifico aparece".<br></p>`
     }else{
     
-        mostrarlista.innerHTML = `Tudo bem :)`
+        Mostrarlista.innerHTML = `Tudo bem :)`
+    }
+}
+
+function Proibicao(){
+    alert("Isso não parece funcionar...")
+}
+
+function ProibicaoDominio(){
+    alert("isso não funciona aqui hehehehe")
+}
+
+let QNTsorte = 0//para a função sorte
+let QNTazar = 0
+function sorteouazar() {
+    let minimo = 1;
+    let maximo = 100;
+    let dif = maximo - minimo; /*diferença*/
+    let aleatorio = Math.random();
+    let num = minimo + Math.trunc(dif * aleatorio);
+
+    let mostrar = document.getElementById('mostrar')
+    
+    
+
+    if(num > 50){
+        QNTsorte++;
+        mostrar.innerHTML = `<p>Sorte: ${QNTsorte}</p><p>Azar: ${QNTazar}</p><img src="sorte.webp" height=100 widith=100>`;//sorte
+    }else{
+        QNTazar++;
+        mostrar.innerHTML = `<p>Sorte: ${QNTsorte}</p><p>Azar: ${QNTazar}</p><img src="azar.webp" height=100 widith=100>`;//azar
     }
 }
