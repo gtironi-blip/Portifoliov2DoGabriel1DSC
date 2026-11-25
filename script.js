@@ -42,6 +42,11 @@ function ParImpar() {
 
 
 function Domain() {
+    document.body.style.backgroundImage = "url('../shadowgarden.gif')";
+    console.log("Funcionou!"); // Usei IA nisso
+}
+
+function Domain2() {
     document.body.style.backgroundImage = "url('shadowgarden.gif')";
     console.log("Funcionou!"); // Usei IA nisso
 }
@@ -82,7 +87,7 @@ function site() {
         
     case "lula":
 
-        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo, PROTOCOLO NÚMERO 3000 ATIVADO, BOLSA FAMILIA PARA TODOS!</p> <img src="lulatron.webp" alt="foto do lulatron 3000" height="300" widith="200">`
+        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo, PROTOCOLO NÚMERO 3000 ATIVADO, FEIJÃO COM FARINHA PARA TODOS!</p> <img src="lulatron.webp" alt="foto do lulatron 3000" height="300" widith="200">`
         break;
     
     case "Knight":
@@ -159,4 +164,8 @@ function sorteouazar() {
         QNTazar++;
         mostrar.innerHTML = `<p>Sorte: ${QNTsorte}</p><p>Azar: ${QNTazar}</p><img src="azar.webp" height=100 widith=100>`;//azar
     }
+}
+
+function FundoAudio(){
+    
 }

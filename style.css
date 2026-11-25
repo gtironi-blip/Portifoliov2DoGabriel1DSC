@@ -51,7 +51,7 @@ button {
 
 }
 
-button :hover{
+button:hover{
     background-color:darkolivegreen;
     transform: scale(1.1);
 }
@@ -87,8 +87,9 @@ a {
     border-color:black;
 }
 
-.rickroll :not(:hover){
-    
+.rickroll:hover {
+    transition: none;
+    transform:scale(1.0);
 }
 
 .rodape{
