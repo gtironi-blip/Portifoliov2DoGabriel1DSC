@@ -40,6 +40,13 @@ function ParImpar() {
 
 }
 
+const WRJingle = new Audio('weird-route-jingle.mp3');
+
+WRJingle.play();
+
+function EfeitoSonoro(){
+    WRJingle.play(); //pesquisei na internet
+}
 
 function Domain() {
     document.body.style.backgroundImage = "url('../shadowgarden.gif')";
@@ -49,6 +56,16 @@ function Domain() {
 function Domain2() {
     document.body.style.backgroundImage = "url('shadowgarden.gif')";
     console.log("Funcionou!"); // Usei IA nisso
+}
+
+function Castletown(){
+    document.body.style.backgroundImage = "url('../tuff.webp')";//trocar pela imagen ralsei castletown
+    
+}
+function Castletown2(){
+    document.body.style.backgroundImage = "none";
+    document.body.style.backgroundColor = "#fff1ba";
+    
 }
 
 function MaiorMenor() {
