@@ -129,7 +129,7 @@ function easteregg() { //nesse eu não usei IA, apenas o que aprendemos
 
     if(listaSimNao == "sim"){
         
-        Mostrarlista.innerHTML = `<p>aqui está a lista:<br> na atividade "interação", se você colocar os nomes "flavio", "lula" e "Knight", algo acontece<br> na atividade "aleatório, se você rolar 67, um gif especifico aparece".<br></p>`
+        Mostrarlista.innerHTML = `<p>aqui está a lista:<br> na atividade "interação", se você colocar os nomes "flavio", "lula" e "Knight", algo acontece<br> na atividade "aleatório", se você rolar 67, um gif especifico aparece.<br></p>`
     }else{
     
         Mostrarlista.innerHTML = `Tudo bem :)`
@@ -167,5 +167,5 @@ function sorteouazar() {
 }
 
 function FundoAudio(){
-    
+
 }
