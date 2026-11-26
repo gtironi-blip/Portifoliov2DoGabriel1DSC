@@ -59,7 +59,7 @@ function Domain2() {
 }
 
 function Castletown(){
-    document.body.style.backgroundImage = "url('../tuff.webp')";//trocar pela imagen ralsei castletown
+    document.body.style.backgroundImage = "url('../rct.png')";//utilizei o negocio pré pronto que  eu já tinha
     
 }
 function Castletown2(){
@@ -95,7 +95,7 @@ function site() {
 
     mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark> Seja bem vindo </p>`;
 
-   switch(nome){
+   switch(nome){ // pedi ajuda pro caio
 
     case "flavio":
        
@@ -108,7 +108,7 @@ function site() {
         break;
     
     case "Knight":
-        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark></p> <a href="../segredo/secret.html"><button >???</button></a>`
+        mostrar.innerHTML = `<p>Olá <mark>${nome}!</mark></p> <a href="../segredo/secret.html"><button onclick="EfeitoSonoro()">???</button></a>`
         
         break
    }
@@ -180,9 +180,6 @@ function sorteouazar() {
     }else{
         QNTazar++;
         mostrar.innerHTML = `<p>Sorte: ${QNTsorte}</p><p>Azar: ${QNTazar}</p><img src="azar.webp" height=100 widith=100>`;//azar
-    }
+    }email
 }
 
-function FundoAudio(){
-
-}
